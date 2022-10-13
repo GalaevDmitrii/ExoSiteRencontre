@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Site de rencontre</legend>
+        <form action="">
+            <div>
+                <label for="id1">Nom : </label>
+
+                <input type="text" id="id1" name="Nom" placeholder="Nom" minlength="2" maxlength="45"
+                    pattern="[A-Za-z]" />
+
+            </div>
+            <br>
+
+            <div>
+                <label for="">Prenom : </label>
+                <input type="text" id="id2" name="Prenom" placeholder="Prenom" minlength="2" maxlength="45" />
+            </div>
+            <br>
+            <div>
+                <label for="">Email : </label>
+                <input type="email" pattern="^[a-z0-9]+@[a-z]+\.com|.net|.fr|.org$ " />
+
+            </div>
+            <br>
+
+            <div>
+                <label for="id3">Sexe</label>
+                <input type="radio" name="sexe" id="id3" />Masculin
+                <input type="radio" name="sexe" id="id3" checked />Femenin
+
+            </div>
+
+            <br>
+            <div>
+                <form action="" enctype="multipart/form-data" method="POST">
+                    <label for="id4">Photo : </label>
+                    <input id="id4" type="file" name="image" accept="image/png, image/jpeg" />
+                </form>
+            </div>
+            <br>
+            <div>
+                <form action="">
+                    <label>Pays</label>
+                    <select>
+                        <option value="1">France</option>
+                        <option value="2">Angleterre</option>
+                        <option value="3" selected>Allemagne</option>
+                        <option value="4">Italie</option>
+                        <option value="5">Suisse</option>
+                        <option value="6">Espagne</option>
+                    </select>
+                </form>
+            </div>
+            <br>
+            <div>
+                <form action="">
+                    <label>Langue</label>
+                    <select multiple>
+                        <option value="1">Francais</option>
+                        <option value="2">Anglais</option>
+                        <option value="3">Allemand</option>
+                        <option value="4">Italienne</option>
+                        <option value="5">Suisse</option>
+                        <option value="6">Espagnol</option>
+                    </select>
+                </form>
+
+            </div>
+            <br>
+            <div>
+                <legend>Votre profession</legend>
+                <label for="pl">Plombier</label>
+                <input id="pl" type="checkbox" />
+                <label for="el">Électricien</label>
+                <input id="el" type="checkbox" />
+                <label for="mc">Maçon</label>
+                <input id="mc" type="checkbox" />
+                <label for="cr">Carreleur</label>
+                <input id="cr" type="checkbox" />
+                <label for="me">Menuisier</label>
+                <input id="me" type="checkbox" />
+                <label for="co">Couvreur</label>
+                <input id="co" type="checkbox" />
+            </div>
+            <input type="submit" name="Submit" id="sb" value="Submit">
+
+
+
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
